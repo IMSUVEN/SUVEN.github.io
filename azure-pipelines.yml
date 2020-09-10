@@ -26,6 +26,6 @@ steps:
     git config user.name "suven"
     git config user.email "imsuven@outlook.com"
     git add .
-    git commit -m "Update from auzre-pipeline @$(Get-Date -Format 'yyyy-MM-dd hh:mm:ss')"
-    git push --force --quiet "https://$(GH_TOKEN)@github.com/IMSUVEN/suven.github.io.git" gh-pages:gh-pages
+    git commit -m "Update from auzre-pipeline @ $(Get-Date -Format 'yyyy-MM-dd hh:mm:ss')"
+    git push --force --quiet "https://$(GH_TOKEN)@github.com/IMSUVEN/suven.github.io.git" master:gh-pages
   displayName: 'Push to gh-page'
