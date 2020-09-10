@@ -16,8 +16,16 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install hexo-cli -g
     npm install
-    npm run build
-    hexo generate
-  displayName: 'npm install and build'
+    npx hexo g
+  displayName: 'npm install and generate'
+
+- pwsh: |
+    cd ./public
+    git init
+    git config user.name "suven"
+    git config user.email "imsuven@outlook.com"
+    git add .
+    git commit -m "Update from auzre-pipeline @$(Get-Date -Format 'yyyy-MM-dd hh:mm:ss')"
+    git push --force --quiet "https://$(GH_TOKEN)@github.com/IMSUVEN/suven.github.io.git" gh-pages:gh-pages
+  displayName: 'Push to gh-page'
