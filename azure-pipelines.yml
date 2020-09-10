@@ -3,29 +3,34 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+#当master分支更新时自动运行
 trigger:
 - master
 
+#ubuntu镜像
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+#获取Node.js环境
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+#安装hexo并更新静态文件
 - script: |
     npm install
     npx hexo g
   displayName: 'npm install and generate'
 
+#将静态文件推送至gh-pages分支
 - pwsh: |
     cd ./public
     git init
-    git config user.name "suven"
-    git config user.email "imsuven@outlook.com"
+    git config user.name "$(name)"
+    git config user.email "$(email)"
     git add .
     git commit -m "Update from auzre-pipeline @ $(Get-Date -Format 'yyyy-MM-dd hh:mm:ss')"
-    git push --force --quiet "https://$(GH_TOKEN)@github.com/IMSUVEN/suven.github.io.git" master:gh-pages
+    git push --force --quiet "https://$(GH_TOKEN)@$(Repositories)" master:gh-pages
   displayName: 'Push to gh-page'
