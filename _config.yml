@@ -105,12 +105,5 @@ theme: Hacker
 deploy:
   type: ''
 
-# gitment
-gitment: true
-gitment_owner: imsuven
-gitment_repo: suven.github.io
-gitment_client_id: e8afff75d67cbfbcd51b
-gitment_client_secret: a1ee5182d0ee9c49ad9bd8c9f0899d19a44a436d
-
 # google analytics
 googleTrackId: UA-159366081-1
