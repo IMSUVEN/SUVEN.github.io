@@ -1,6 +1,7 @@
 menu:
   Home: /
-  Archives: /archives
+  Archives: /Archives
+  About: /About
 
 # gitment
 gitment: false
@@ -10,12 +11,12 @@ gitment_client_id:
 gitment_client_secret:
 
 # gitalk
-gitalk: false
-gitalk_owner:
-gitalk_admin: []
-gitalk_repo:
-gitalk_client_id:
-gitalk_client_secret:
+gitalk: true
+gitalk_owner: imsuven
+gitalk_admin: ['imsuven']
+gitalk_repo: suven.github.io
+gitalk_client_id: e8afff75d67cbfbcd51b
+gitalk_client_secret: a1ee5182d0ee9c49ad9bd8c9f0899d19a44a436d
 
 # valine comment
 valine: false
@@ -27,10 +28,10 @@ disqus: false
 disqus_shortname:
 
 # google analytics
-googleTrackId:
+googleTrackId: UA-159366081-1
 
 # baidu analytics
 baiduTrackId:
 
 # whether to show read more button when showing article in excerpt in main page
-read_more: false
+read_more: true
