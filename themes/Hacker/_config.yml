@@ -1,8 +1,7 @@
 menu:
   Home: /
-  Archives: /Archives
-  Categories: /categories
-  Tags: /tag
+  Archives: /archives
+  Tags: /tags
   About: /about
 
 # gitment
