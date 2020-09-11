@@ -27,6 +27,7 @@ steps:
 #将静态文件推送至gh-pages分支
 - pwsh: |
     cd ./public
+    echo '$(domain)' > CNAME
     git init
     git config user.name "$(name)"
     git config user.email "$(email)"
