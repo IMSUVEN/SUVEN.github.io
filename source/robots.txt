@@ -1,0 +1,14 @@
+#robots.txt
+User-agent: *
+
+Allow: /
+Allow: /tags
+Allow: /categories
+Allow: /archives
+
+Disallow: 
+Disallow: /js/
+Disallow: /css/
+Disallow: /about
+
+Sitemap: https://suven.xyz/sitemap

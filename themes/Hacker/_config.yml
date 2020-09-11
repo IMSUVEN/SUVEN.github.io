@@ -1,7 +1,9 @@
 menu:
   Home: /
   Archives: /Archives
-  About: /About
+  Categories: /categories
+  Tags: /tag
+  About: /about
 
 # gitment
 gitment: false
