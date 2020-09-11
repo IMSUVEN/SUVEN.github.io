@@ -105,5 +105,40 @@ theme: Hacker
 deploy:
   type: ''
 
-# google analytics
-googleTrackId: UA-159366081-1
+  menu:
+    Home: /
+    Archives: /Archives
+    About: /About
+  
+  # gitment
+  gitment: false
+  gitment_owner:
+  gitment_repo:
+  gitment_client_id:
+  gitment_client_secret:
+  
+  # gitalk
+  gitalk: true
+  gitalk_owner: imsuven
+  gitalk_admin: ['imsuven']
+  gitalk_repo: suven.github.io
+  gitalk_client_id: e8afff75d67cbfbcd51b
+  gitalk_client_secret: a1ee5182d0ee9c49ad9bd8c9f0899d19a44a436d
+  
+  # valine comment
+  valine: false
+  leancloud_id:
+  leancloud_key:
+  
+  # disqus comment
+  disqus: false
+  disqus_shortname:
+  
+  # google analytics
+  googleTrackId: UA-159366081-1
+  
+  # baidu analytics
+  baiduTrackId:
+  
+  # whether to show read more button when showing article in excerpt in main page
+  read_more: true
