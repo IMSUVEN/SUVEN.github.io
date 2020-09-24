@@ -13,8 +13,8 @@ gitment_client_secret:
 
 # gitalk
 gitalk: true
-gitalk_owner: IMSUVEN
-gitalk_admin: IMSUVEN
+gitalk_owner: imsuven
+gitalk_admin: [imsuven]
 gitalk_repo: suven.github.io
 gitalk_client_id: e8afff75d67cbfbcd51b
 gitalk_client_secret: 51faff4fe6482dc9316256eea973f29a11e3e274
