@@ -5,9 +5,9 @@ tags:
 ---
 Hello, World
 
-首先恭喜我今年成为了[微软校园精英](studentambassadors.microsoft.com)，有着博客的要求，所以在拖了如此之久以后，终于建立了起来。  
+首先恭喜我今年成为了[微软校园精英](https://studentambassadors.microsoft.com)，有着博客的要求，所以在拖了如此之久以后，终于建立了起来。  
 
-![Microsoft Learn Student Ambassador](https://studentambassadors.microsoft.com/assets/badge/level-alpha.png)
+<img src="https://studentambassadors.microsoft.com/assets/badge/level-alpha.png" width="50%">
 
 第二呢，我即将从重庆大学毕业，我也希望通过这个博客记录我接下来的技术进步和生活，10年后再回顾现在。
 
